@@ -1,0 +1,404 @@
+[
+ {
+   "noReg": 2,
+   "nama": "ADERALD ZEROUND JIBRIELALJARAZ",
+   "ttl": "SURAKARTA, 26/03/2019",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 4,
+   "nama": "MIKAILA SYAWALIAH DWI BUKHORI",
+   "ttl": "JEMBER, 02/07/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 34,
+   "nama": "KAM RAFIFTA DAMARA",
+   "ttl": "PROBOLINGGO, 14/04/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 44,
+   "nama": "SYIFA DELISHA SANDI",
+   "ttl": "BANYUWANGI, 08/05/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 53,
+   "nama": "ZHEA AZZALEA VELLANDRA PUTRI",
+   "ttl": "JEMBER, 31/05/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 60,
+   "nama": "ABQARI RUNAKO ARSENIO WIRATAMA",
+   "ttl": "JEMBER, 11/04/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 8,
+   "nama": "QOIS GEMILANG AL FATIH",
+   "ttl": "JEMBER, 11/08/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 9,
+   "nama": "KEVIN ALFA PRAYOGA",
+   "ttl": "JEMBER, 13/05/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 10,
+   "nama": "SYAHRIAN ABIMANYU",
+   "ttl": "JEMBER, 11/08/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 12,
+   "nama": "AYLA NABILA",
+   "ttl": "JEMBER, 12/06/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 14,
+   "nama": "MUZAMMIL FATIH",
+   "ttl": "JEMBER, 07/09/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 15,
+   "nama": "MUHAMMAD ZAFRAN WAHYUDI",
+   "ttl": "JEMBER, 14/08/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 18,
+   "nama": "DENTA KAIFAN RAFIZKY",
+   "ttl": "JEMBER, 21/08/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 22,
+   "nama": "ALEA SHABIRA NITAKA",
+   "ttl": "JEMBER, 27/01/2019",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 23,
+   "nama": "DIVA PUTRI MEILINDA",
+   "ttl": "JEMBER, 12/05/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 24,
+   "nama": "ANINDI SAFINA HADIYANI",
+   "ttl": "JEMBER, 29/04/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 25,
+   "nama": "SYAFIQAH GHANIA ALMAHYRA",
+   "ttl": "JEMBER, 23/10/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 28,
+   "nama": "MOCH. IRFAN ILHAM SYAH",
+   "ttl": "JEMBER, 03/02/2019",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 31,
+   "nama": "ABIMANYU GIBRAN ARYA PRATAMA",
+   "ttl": "JEMBER, 05/01/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 32,
+   "nama": "ALESHA NADA ASSYIFA",
+   "ttl": "JEMBER, 27/09/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 35,
+   "nama": "ARYA ALVIAN KHALIF",
+   "ttl": "JEMBER, 20/10/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 36,
+   "nama": "QANITA BINTANG MIKKHAYLA",
+   "ttl": "JEMBER, 11/07/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 37,
+   "nama": "KHOIRUNISSA LUNA RIFANDI",
+   "ttl": "JEMBER, 15/09/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 38,
+   "nama": "ARSYIFA HAZNA KAMALIYAH",
+   "ttl": "JEMBER, 25/08/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 39,
+   "nama": "RAISYA APRILLIA MAHARANI",
+   "ttl": "JEMBER, 19/04/2019",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 43,
+   "nama": "ABIMANA ARKAAN ARTANABIL ASIALIGHT",
+   "ttl": "JEMBER, 08/08/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 45,
+   "nama": "VIAN SYAKIR MUHADZIB",
+   "ttl": "JEMBER, 18/08/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 47,
+   "nama": "ABRISAM GHADI BRIAN RABBANI",
+   "ttl": "JEMBER, 24/09/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 49,
+   "nama": "AMIRA AZ ZAHRA ALFAITUNNISA",
+   "ttl": "JEMBER, 28/11/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 57,
+   "nama": "KARINA AYUNINDYA",
+   "ttl": "JEMBER, 24/03/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 58,
+   "nama": "KIRANA AYUNINDYA",
+   "ttl": "JEMBER, 24/03/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 62,
+   "nama": "AHMAD SAHRI RAMADANI",
+   "ttl": "JEMBER, 17/05/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 63,
+   "nama": "RAFFASYA ALFARIZQI FIRMANSYAH",
+   "ttl": "JEMBER, 12/09/2018",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 68,
+   "nama": "ALMIRA HANA SYAKIRA",
+   "ttl": "BANYUWANGI, 02/06/2019",
+   "status": "DITERIMA"
+ },
+ {
+   "noReg": 1,
+   "nama": "HAIKAL ALI BAIHAQI",
+   "ttl": "JEMBER, 08/10/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 3,
+   "nama": "ADZKIYA SHEZI IRAWAN",
+   "ttl": "JEMBER, 16/09/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 5,
+   "nama": "MUHAMMAD TIO AL SHIBY",
+   "ttl": "JEMBER, 03/12/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 6,
+   "nama": "AHMAD REHAN PUTRA DARMAWAN",
+   "ttl": "JEMBER, 20/12/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 7,
+   "nama": "ARASELY SALSABILLA MACHEL",
+   "ttl": "JEMBER, 21/01/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 11,
+   "nama": "LENTERA QIANA AZKADINA",
+   "ttl": "JEMBER, 18/06/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 13,
+   "nama": "ZEFA RASYA ZAKY",
+   "ttl": "JEMBER, 19/03/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 16,
+   "nama": "SAILENDRA ARKHAN WIJAYANTO",
+   "ttl": "JEMBER, 27/03/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 17,
+   "nama": "FARIZA AZKIA AGESTY",
+   "ttl": "JEMBER, 01/08/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 19,
+   "nama": "AZRIL RAHANDIKA PURWANTO",
+   "ttl": "JEMBER, 14/12/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 20,
+   "nama": "MAURA RIGA PUTRI",
+   "ttl": "JEMBER, 05/04/2019",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 21,
+   "nama": "MUHAMMAD ARGA ZAVIER AMANULLAH",
+   "ttl": "JEMBER, 12/12/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 26,
+   "nama": "PARAMAYOGA WAHYU FAREZI",
+   "ttl": "JEMBER, 11/08/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 27,
+   "nama": "AZKIYA PUTRI ALFAUZAN",
+   "ttl": "JEMBER, 06/05/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 29,
+   "nama": "IBRAHIM MANENDRA PUTRA",
+   "ttl": "JEMBER, 05/10/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 30,
+   "nama": "MALKA QUTHBIE ZAYAN",
+   "ttl": "BANYUWANGI, 17/06/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 33,
+   "nama": "ZAFARINA PUTRI LATIFA",
+   "ttl": "JEMBER, 28/06/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 40,
+   "nama": "MUHAMMAD RAIHAN AZKA PUTRA DHIAUR ROHMAN ",
+   "ttl": "JEMBER, 03/04/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 41,
+   "nama": "SYABIAN SYAZANI ARDIANSYAH",
+   "ttl": "JEMBER, 17/09/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 42,
+   "nama": "YARA RAESHA HAZWAN",
+   "ttl": "JEMBER, 07/10/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 46,
+   "nama": "NUFAN SYAWALUNA DINANTI ",
+   "ttl": "JEMBER, 18/06/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 48,
+   "nama": "MUHAMMAD HAIKAL ALI PRATAMA",
+   "ttl": "JEMBER, 11/11/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 50,
+   "nama": "AZKADITTA RAFAEYZA ARZANKA",
+   "ttl": "JAKARTA, 30/07/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 51,
+   "nama": "KEINDRA RAFFASYA OKTARIAN",
+   "ttl": "BANYUWANGI, 09/10/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 52,
+   "nama": "AULIA ZIZI SHALIMAR",
+   "ttl": "JEMBER, 25/04/2019",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 54,
+   "nama": "SHANUM AQILA ASHEEQA",
+   "ttl": "JEMBER, 04/01/2019",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 55,
+   "nama": "BILQIS NUR MAULIDDIYAH",
+   "ttl": "JEMBER, 28/12/2017",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 56,
+   "nama": "MUHAMMAD AKBAR AL KAHFI",
+   "ttl": "JEMBER, 22/08/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 59,
+   "nama": "ARSYLA QUEENSHA NUGRAHANI",
+   "ttl": "JEMBER, 01/12/2017",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 61,
+   "nama": "ALMEIRA SHAFA MUSLIFAH",
+   "ttl": "MALANG, 22/05/2018",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 64,
+   "nama": "FLORI JENAR ARUNA",
+   "ttl": "JEMBER, 11/01/2019",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 65,
+   "nama": "MEISYA CARLA ALEXANDER",
+   "ttl": "JEMBER, 08/01/2019",
+   "status": "TIDAK DITERIMA"
+ },
+ {
+   "noReg": 67,
+   "nama": "NOUREEN ALISHA AGUNG",
+   "ttl": "JEMBER, 05/12/2018",
+   "status": "TIDAK DITERIMA"
+ }
+]

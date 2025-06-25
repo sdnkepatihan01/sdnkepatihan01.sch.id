@@ -341,19 +341,11 @@ body.dark-mode .btn-outline-primary {
   border-color: #f1f1f1;
 }
 
-#snowCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
+
 
 </style>
 </head>
-<body><div id="clock" style="position:fixed;top:10px;right:10px;font-weight:bold;background:#fff;color:#000;padding:5px 10px;border-radius:8px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2)">00:00:00</div>
+<body>
 <!-- Canvas untuk Confetti -->
 <canvas id="confetti-canvas"></canvas>
 <!-- Navbar -->
@@ -773,6 +765,10 @@ const toggle = document.getElementById("darkModeToggle");
 toggle.addEventListener("change", function () {
   document.body.classList.toggle("dark-mode", toggle.checked);
 });
+
+// Jalankan efek ketikan saat pertama kali load
+            setTimeout(typeWriter, 1000);
+        });
     </script>
 <!-- Tombol Back to Top -->
 <button id="backToTopBtn" title="Kembali ke Atas"><i class="fas fa-arrow-up"></i></button>
@@ -782,33 +778,6 @@ toggle.addEventListener("change", function () {
 <label class="form-check-label text-dark" for="darkModeToggle">Dark Mode</label>
 </div>
 <!-- Efek Salju -->
-<canvas id="snowCanvas"></canvas>
-<script>
-</script><script>
-navigator.geolocation.getCurrentPosition(function(position) {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
-    const apiKey = 'https://wttr.in/?format=3'; // Use wttr.in for quick no-auth weather
 
-    fetch(`https://wttr.in/?format=3`)
-    .then(response => response.text())
-    .then(data => {
-        const weatherBox = document.createElement("div");
-        weatherBox.style.position = "fixed";
-        weatherBox.style.bottom = "10px";
-        weatherBox.style.left = "10px";
-        weatherBox.style.backgroundColor = "#fff";
-        weatherBox.style.color = "#000";
-        weatherBox.style.padding = "6px 12px";
-        weatherBox.style.borderRadius = "10px";
-        weatherBox.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
-        weatherBox.style.zIndex = "9999";
-        weatherBox.textContent = "Cuaca: " + data;
-        document.body.appendChild(weatherBox);
-    })
-    .catch(error => {
-        console.log("Gagal mendapatkan data cuaca:", error);
-    });
-});
-</script></body>
+</body>
 </html>

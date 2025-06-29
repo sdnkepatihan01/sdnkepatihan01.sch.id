@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="id">
 <head>
 <meta charset="utf-8"/>
@@ -341,7 +340,233 @@ body.dark-mode .btn-outline-primary {
   border-color: #f1f1f1;
 }
 
+/* New styles for graduation check */
+.announcement-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 30px auto;
+    max-width: 800px;
+}
 
+.announcement-header {
+    background: linear-gradient(135deg, #1a237e, #283593);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.announcement-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.announcement-body {
+    padding: 40px;
+}
+
+.check-form {
+    margin-bottom: 30px;
+}
+
+.check-form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.check-form input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.check-form input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.2);
+    outline: none;
+}
+
+.check-btn {
+    background: linear-gradient(135deg, #1a237e, #283593);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+}
+
+.check-btn:hover {
+    background: linear-gradient(135deg, #283593, #1a237e);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(26, 35, 126, 0.4);
+}
+
+/* New result display style */
+.result-display {
+    display: none;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.result-header {
+    background: linear-gradient(135deg, #1a237e, #283593);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.result-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.result-subtitle {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.result-content {
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.result-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.result-label {
+    font-weight: 600;
+    color: #333;
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.result-value {
+    font-weight: 500;
+    color: #555;
+    flex-grow: 1;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.status-accepted {
+    background-color: #4caf50;
+    color: white;
+}
+
+.status-rejected {
+    background-color: #f44336;
+    color: white;
+}
+
+.download-btn {
+    background: linear-gradient(135deg, #1a237e, #283593);
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(26, 35, 126, 0.3);
+    color: white;
+}
+
+.result-footer {
+    background-color: #e8eaf6;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Jadwal Daftar Ulang Styles */
+#jadwalDaftarUlang {
+    animation: fadeIn 0.8s ease-out;
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+body.dark-mode #jadwalDaftarUlang {
+    background-color: #2d2d2d !important;
+    border-color: #444;
+}
+
+#jadwalDaftarUlang h5 {
+    color: var(--secondary);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.school-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .announcement-header {
+        padding: 20px;
+    }
+    
+    .announcement-header h2 {
+        font-size: 24px;
+    }
+    
+    .announcement-body {
+        padding: 20px;
+    }
+    
+    .result-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .result-label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
 
 </style>
 </head>
@@ -470,56 +695,88 @@ body.dark-mode .btn-outline-primary {
 <div class="tab-pane" id="info-spmb">
 <section class="py-5">
 <div class="container">
-<h2 class="text-center section-title">Informasi Kelulusan</h2>
-<div class="row mt-4">
-<div class="col-md-6">
-<div class="card">
-<div class="card-header">
-<h4 class="mb-0">Pengumuman Kelulusan - Tahap 1</h4>
-</div>
-<div class="card-body">
-<div class="mb-3">
-<label class="form-label" for="nomorPendaftaran">Nomor Pendaftaran</label>
-<input class="form-control" id="nomorPendaftaran" placeholder="Masukkan nomor pendaftaran" type="text"/>
-</div>
-<button class="btn btn-primary" id="cekKelulusan">Cek Kelulusan</button>
-<div class="mt-4" id="hasilKelulusan" style="display: none;">
-<h5>Hasil Kelulusan</h5>
-<table class="table table-bordered">
-<tr>
-<th width="30%">No Registrasi</th>
-<td id="noPeserta"></td>
-</tr>
-<tr>
-<th>Nama Siswa</th>
-<td id="namaSiswa"></td>
-</tr>
-<tr>
-<th>Tempat/Tgl Lahir</th>
-<td id="nisn"></td>
-</tr>
-<tr>
-<th>Status Penerimaan</th>
-<td id="status"></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="card h-100">
-<div class="card-header">
-<h4 class="mb-0">Pengumuman Kelulusan - Tahap 2</h4>
-</div>
-<div class="card-body">
-<div class="coming-soon">
-<h2><i class="fas fa-hourglass-half"></i> COMING SOON</h2>
-<p>Pengumuman akan tersedia pada 30 Juni 2025</p>
-</div>
-</div>
-</div>
-</div>
+<div class="announcement-container">
+    <div class="announcement-header">
+        <img src="logosekolah.png" alt="Logo SDN Kepatihan 01" class="school-logo">
+        <h2>PENGUMUMAN KELULUSAN</h2>
+        <p>SDN KEPATIHAN 01 - Tahun Pelajaran 2025/2026</p>
+    </div>
+    <div class="announcement-body">
+        <div class="check-form">
+            <label for="inputNik">Silahkan Masukkan NIK Calon Siswa Pada Form Dibawah</label>
+            <input type="text" id="inputNik" placeholder="Masukkan 16 digit NIK">
+            <button class="check-btn" id="btnCekKelulusan">
+                <i class="fas fa-search me-2"></i> Check Data
+            </button>
+        </div>
+        
+        <div id="resultDisplay" class="result-display">
+            <div class="result-header">
+                <h3 class="result-title">HASIL SELEKSI PENERIMAAN MURID BARU</h3>
+                <p class="result-subtitle">SDN KEPATIHAN 01 - Tahun Pelajaran 2025/2026</p>
+            </div>
+            <div class="result-content">
+                <span id="statusBadge" class="status-badge"></span>
+                
+                <div class="result-item">
+                    <span class="result-label">Nomor Pendaftaran</span>
+                    <span class="result-value" id="resultNoPendaftaran">-</span>
+                </div>
+                
+                <div class="result-item">
+                    <span class="result-label">Nama Siswa</span>
+                    <span class="result-value" id="resultNama">-</span>
+                </div>
+                
+                <div class="result-item">
+                    <span class="result-label">Tempat/Tgl Lahir</span>
+                    <span class="result-value" id="resultTtl">-</span>
+                </div>
+                
+                <div class="result-item">
+                    <span class="result-label">NIK</span>
+                    <span class="result-value" id="resultNik">-</span>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="#" id="downloadBtn" class="download-btn">
+                        <i class="fas fa-download me-2"></i> Unduh Hasil
+                    </a>
+                </div>
+            </div>
+            <div class="result-footer">
+                Dokumen ini dicetak secara otomatis pada <span id="printDate"></span>
+            </div>
+        </div>
+        
+        <!-- Jadwal Daftar Ulang -->
+        <div id="jadwalDaftarUlang" class="mt-4">
+            <h5>JADWAL DAFTAR ULANG</h5>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="alert alert-success">
+                        <i class="fas fa-calendar-alt me-2"></i> 
+                        <strong>Tanggal:</strong> 30 Juni - 2 Juli 2025<br>
+                        <i class="fas fa-clock me-2"></i> 
+                        <strong>Jam:</strong> 07.30 - 11.00 WIB<br>
+                        <i class="fas fa-map-marker-alt me-2"></i> 
+                        <strong>Tempat:</strong> Sekretariat SPMB SDN Kepatihan 01<br>
+                        <i class="fas fa-user me-2"></i>
+                        <strong>Peserta:</strong> Cukup diwakili 1 orang tua<br>
+                        <i class="fas fa-file-alt me-2"></i> 
+                        <strong>Dokumen yang dibawa:</strong><br>
+                        - Materai Rp. 10.000
+                        - Alat Tulis
+                    </div>
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Catatan:</strong> Kegiatan SPMB tidak dipungut biaya apapun
+                    </div>
+                    <p class="text-muted">*Bagi siswa yang diterima wajib melakukan daftar ulang sesuai jadwal di atas apabila tidak mendaftar ulang dianggap mengundurkan diri</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 </section>
@@ -554,7 +811,7 @@ body.dark-mode .btn-outline-primary {
 </div>
 <hr class="my-4 bg-light"/>
 <div class="text-center">
-<p class="mb-0">© 2025 SDN Kepatihan 01. All Rights Reserved.</p>
+<p class="mb-0">@2025 SISTEM PENERIMAAN MURID BARU SDN KEPATIHAN 01</p>
 </div>
 </div>
 </footer>
@@ -591,6 +848,8 @@ body.dark-mode .btn-outline-primary {
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
         // Fungsi untuk membuka tab
         function openTab(tabName) {
@@ -648,125 +907,212 @@ body.dark-mode .btn-outline-primary {
             }
         }
 
-        // Fungsi cek kelulusan
-        document.addEventListener('DOMContentLoaded', function() {
-            const graduationData = [
-                { "noReg": 2, "nama": "ADERALD ZEROUND JIBRIELALJARAZ", "ttl": "SURAKARTA, 26/03/2019", "status": "DITERIMA" },
-                { "noReg": 4, "nama": "MIKAILA SYAWALIAH DWI BUKHORI", "ttl": "JEMBER, 02/07/2018", "status": "DITERIMA" },
-                { "noReg": 34, "nama": "KAM RAFIFTA DAMARA", "ttl": "PROBOLINGGO, 14/04/2018", "status": "DITERIMA" },
-                { "noReg": 44, "nama": "SYIFA DELISHA SANDI", "ttl": "BANYUWANGI, 08/05/2018", "status": "DITERIMA" },
-                { "noReg": 53, "nama": "ZHEA AZZALEA VELLANDRA PUTRI", "ttl": "JEMBER, 31/05/2018", "status": "DITERIMA" },
-                { "noReg": 60, "nama": "ABQARI RUNAKO ARSENIO WIRATAMA", "ttl": "JEMBER, 11/04/2018", "status": "DITERIMA" },
-                { "noReg": 8, "nama": "QOIS GEMILANG AL FATIH", "ttl": "JEMBER, 11/08/2018", "status": "DITERIMA" },
-                { "noReg": 9, "nama": "KEVIN ALFA PRAYOGA", "ttl": "JEMBER, 13/05/2018", "status": "DITERIMA" },
-                { "noReg": 10, "nama": "SYAHRIAN ABIMANYU", "ttl": "JEMBER, 11/08/2018", "status": "DITERIMA" },
-                { "noReg": 12, "nama": "AYLA NABILA", "ttl": "JEMBER, 12/06/2018", "status": "DITERIMA" },
-                { "noReg": 14, "nama": "MUZAMMIL FATIH", "ttl": "JEMBER, 07/09/2018", "status": "DITERIMA" },
-                { "noReg": 15, "nama": "MUHAMMAD ZAFRAN WAHYUDI", "ttl": "JEMBER, 14/08/2018", "status": "DITERIMA" },
-                { "noReg": 18, "nama": "DENTA KAIFAN RAFIZKY", "ttl": "JEMBER, 21/08/2018", "status": "DITERIMA" },
-                { "noReg": 22, "nama": "ALEA SHABIRA NITAKA", "ttl": "JEMBER, 27/01/2019", "status": "DITERIMA" },
-                { "noReg": 23, "nama": "DIVA PUTRI MEILINDA", "ttl": "JEMBER, 12/05/2018", "status": "DITERIMA" },
-                { "noReg": 24, "nama": "ANINDI SAFINA HADIYANI", "ttl": "JEMBER, 29/04/2018", "status": "DITERIMA" },
-                { "noReg": 25, "nama": "SYAFIQAH GHANIA ALMAHYRA", "ttl": "JEMBER, 23/10/2018", "status": "DITERIMA" },
-                { "noReg": 28, "nama": "MOCH. IRFAN ILHAM SYAH", "ttl": "JEMBER, 03/02/2019", "status": "DITERIMA" },
-                { "noReg": 31, "nama": "ABIMANYU GIBRAN ARYA PRATAMA", "ttl": "JEMBER, 05/01/2018", "status": "DITERIMA" },
-                { "noReg": 32, "nama": "ALESHA NADA ASSYIFA", "ttl": "JEMBER, 27/09/2018", "status": "DITERIMA" },
-                { "noReg": 35, "nama": "ARYA ALVIAN KHALIF", "ttl": "JEMBER, 20/10/2018", "status": "DITERIMA" },
-                { "noReg": 36, "nama": "QANITA BINTANG MIKKHAYLA", "ttl": "JEMBER, 11/07/2018", "status": "DITERIMA" },
-                { "noReg": 37, "nama": "KHOIRUNISSA LUNA RIFANDI", "ttl": "JEMBER, 15/09/2018", "status": "DITERIMA" },
-                { "noReg": 38, "nama": "ARSYIFA HAZNA KAMALIYAH", "ttl": "JEMBER, 25/08/2018", "status": "DITERIMA" },
-                { "noReg": 39, "nama": "RAISYA APRILLIA MAHARANI", "ttl": "JEMBER, 19/04/2019", "status": "DITERIMA" },
-                { "noReg": 43, "nama": "ABIMANA ARKAAN ARTANABIL ASIALIGHT", "ttl": "JEMBER, 08/08/2018", "status": "DITERIMA" },
-                { "noReg": 45, "nama": "VIAN SYAKIR MUHADZIB", "ttl": "JEMBER, 18/08/2018", "status": "DITERIMA" },
-                { "noReg": 47, "nama": "ABRISAM GHADI BRIAN RABBANI", "ttl": "JEMBER, 24/09/2018", "status": "DITERIMA" },
-                { "noReg": 49, "nama": "AMIRA AZ ZAHRA ALFAITUNNISA", "ttl": "JEMBER, 28/11/2018", "status": "DITERIMA" },
-                { "noReg": 57, "nama": "KARINA AYUNINDYA", "ttl": "JEMBER, 24/03/2018", "status": "DITERIMA" },
-                { "noReg": 58, "nama": "KIRANA AYUNINDYA", "ttl": "JEMBER, 24/03/2018", "status": "DITERIMA" },
-                { "noReg": 58, "nama": "KIRANA AYUNINDYA", "ttl": "JEMBER, 24/03/2018", "status": "DITERIMA" },
-                { "noReg": 62, "nama": "AHMAD SAHRI RAMADANI", "ttl": "JEMBER, 17/05/2018", "status": "DITERIMA" },
-                { "noReg": 63, "nama": "RAFFASYA ALFARIZQI FIRMANSYAH", "ttl": "JEMBER, 12/09/2018", "status": "DITERIMA" },
-                { "noReg": 68, "nama": "ALMIRA HANA SYAKIRA", "ttl": "BANYUWANGI, 02/06/2019", "status": "DITERIMA" },
-                { "noReg": 1, "nama": "HAIKAL ALI BAIHAQI", "ttl": "JEMBER, 08/10/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 3, "nama": "ADZKIYA SHEZI IRAWAN", "ttl": "JEMBER, 16/09/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 5, "nama": "MUHAMMAD TIO AL SHIBY", "ttl": "JEMBER, 03/12/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 6, "nama": "AHMAD REHAN PUTRA DARMAWAN", "ttl": "JEMBER, 20/12/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 7, "nama": "ARASELY SALSABILLA MACHEL", "ttl": "JEMBER, 21/01/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 11, "nama": "LENTERA QIANA AZKADINA", "ttl": "JEMBER, 18/06/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 13, "nama": "ZEFA RASYA ZAKY", "ttl": "JEMBER, 19/03/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 16, "nama": "SAILENDRA ARKHAN WIJAYANTO", "ttl": "JEMBER, 27/03/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 17, "nama": "FARIZA AZKIA AGESTY", "ttl": "JEMBER, 01/08/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 19, "nama": "AZRIL RAHANDIKA PURWANTO", "ttl": "JEMBER, 14/12/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 20, "nama": "MAURA RIGA PUTRI", "ttl": "JEMBER, 05/04/2019", "status": "TIDAK DITERIMA" },
-                { "noReg": 21, "nama": "MUHAMMAD ARGA ZAVIER AMANULLAH", "ttl": "JEMBER, 12/12/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 26, "nama": "PARAMAYOGA WAHYU FAREZI", "ttl": "JEMBER, 11/08/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 27, "nama": "AZKIYA PUTRI ALFAUZAN", "ttl": "JEMBER, 06/05/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 29, "nama": "IBRAHIM MANENDRA PUTRA", "ttl": "JEMBER, 05/10/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 30, "nama": "MALKA QUTHBIE ZAYAN", "ttl": "BANYUWANGI, 17/06/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 33, "nama": "ZAFARINA PUTRI LATIFA", "ttl": "JEMBER, 28/06/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 40, "nama": "MUHAMMAD RAIHAN AZKA PUTRA DHIAUR ROHMAN ", "ttl": "JEMBER, 03/04/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 41, "nama": "SYABIAN SYAZANI ARDIANSYAH", "ttl": "JEMBER, 17/09/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 42, "nama": "YARA RAESHA HAZWAN", "ttl": "JEMBER, 07/10/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 46, "nama": "NUFAN SYAWALUNA DINANTI ", "ttl": "JEMBER, 18/06/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 48, "nama": "MUHAMMAD HAIKAL ALI PRATAMA", "ttl": "JEMBER, 11/11/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 50, "nama": "AZKADITTA RAFAEYZA ARZANKA", "ttl": "JAKARTA, 30/07/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 51, "nama": "KEINDRA RAFFASYA OKTARIAN", "ttl": "BANYUWANGI, 09/10/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 52, "nama": "AULIA ZIZI SHALIMAR", "ttl": "JEMBER, 25/04/2019", "status": "TIDAK DITERIMA" },
-                { "noReg": 54, "nama": "SHANUM AQILA ASHEEQA", "ttl": "JEMBER, 04/01/2019", "status": "TIDAK DITERIMA" },
-                { "noReg": 55, "nama": "BILQIS NUR MAULIDDIYAH", "ttl": "JEMBER, 28/12/2017", "status": "TIDAK DITERIMA" },
-                { "noReg": 56, "nama": "MUHAMMAD AKBAR AL KAHFI", "ttl": "JEMBER, 22/08/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 59, "nama": "ARSYLA QUEENSHA NUGRAHANI", "ttl": "JEMBER, 01/12/2017", "status": "TIDAK DITERIMA" },
-                { "noReg": 61, "nama": "ALMEIRA SHAFA MUSLIFAH", "ttl": "MALANG, 22/05/2018", "status": "TIDAK DITERIMA" },
-                { "noReg": 64, "nama": "FLORI JENAR ARUNA", "ttl": "JEMBER, 11/01/2019", "status": "TIDAK DITERIMA" },
-                { "noReg": 65, "nama": "MEISYA CARLA ALEXANDER", "ttl": "JEMBER, 08/01/2019", "status": "TIDAK DITERIMA" },
-                { "noReg": 67, "nama": "NOUREEN ALISHA AGUNG", "ttl": "JEMBER, 05/12/2018", "status": "TIDAK DITERIMA" }
-            ];
-
-            document.getElementById('cekKelulusan').addEventListener('click', function() {
-                const noPendaftaran = document.getElementById('nomorPendaftaran').value.trim();
-                const hasilDiv = document.getElementById('hasilKelulusan');
+        // Fungsi untuk mengambil data dari Google Sheets
+        async function fetchGraduationData() {
+            const sheetId = '1DhSdMg3TqqK_RnShG4Kjdj1TmoaaxqcEO-hyJxodN38';
+            const sheetName = 'Sheet1';
+            
+            try {
+                const response = await fetch(`https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${sheetName}`);
+                if (!response.ok) {
+                    throw new Error('Gagal mengambil data');
+                }
                 
-                if (!noPendaftaran) {
-                    alert('Masukkan nomor pendaftaran');
+                const text = await response.text();
+                const json = JSON.parse(text.substr(47).slice(0, -2));
+                
+                if (json.table.rows && json.table.rows.length > 0) {
+                    // Ambil nama kolom dari header
+                    const headers = json.table.cols.map(col => col.label);
+                    
+                    // Konversi data ke array of objects
+                    return json.table.rows.map(row => {
+                        const obj = {};
+                        row.c.forEach((cell, index) => {
+                            obj[headers[index]] = cell ? (cell.v || '') : '';
+                        });
+                        return obj;
+                    });
+                }
+                return [];
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                throw error;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current date
+            document.getElementById('printDate').textContent = new Date().toLocaleString();
+            
+            // Cek kelulusan berdasarkan NIK
+            document.getElementById('btnCekKelulusan').addEventListener('click', async function() {
+                const nikInput = document.getElementById('inputNik');
+                const nik = nikInput.value.trim();
+                const resultDisplay = document.getElementById('resultDisplay');
+                const statusBadge = document.getElementById('statusBadge');
+                const jadwalDaftarUlang = document.getElementById('jadwalDaftarUlang');
+                
+                if (!nik) {
+                    alert('Mohon masukkan NIK siswa');
+                    nikInput.focus();
+                    return;
+                }
+                
+                // Validasi format NIK (16 digit angka)
+                const cleanNik = nik.replace(/\D/g, '');
+                if (cleanNik.length !== 16) {
+                    alert('NIK harus terdiri dari 16 digit angka');
+                    nikInput.focus();
                     return;
                 }
 
-                // Cari data dengan konversi ke number
-                const result = graduationData.find(item => item.noReg == Number(noPendaftaran));
+                // Tampilkan loading state
+                const btn = this;
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Memeriksa...';
                 
-                if (result) {
-                    document.getElementById('noPeserta').textContent = result.noReg || '-';
-                    document.getElementById('namaSiswa').textContent = result.nama || '-';
-                    document.getElementById('nisn').textContent = result.ttl || '-';
-                    document.getElementById('status').textContent = result.status || '-';
-                    hasilDiv.style.display = 'block';
+                try {
+                    // Ambil data dari Google Sheets
+                    const graduationData = await fetchGraduationData();
                     
-                    // Jika diterima, tampilkan confetti
-                    if (result.status === "DITERIMA") {
-                        launchConfetti();
+                    // Cari data berdasarkan NIK (sebagai string)
+                    const result = graduationData.find(item => {
+                        const itemNik = item.NIK ? item.NIK.toString().trim().replace(/\D/g, '') : '';
+                        return itemNik === cleanNik;
+                    });
+                    
+                    if (result) {
+                        // Tampilkan hasil
+                        document.getElementById('resultNoPendaftaran').textContent = result["NO PENDAFTARAN"] || '-';
+                        document.getElementById('resultNama').textContent = result["NAMA SISWA"] || '-';
+                        document.getElementById('resultTtl').textContent = result["TEMPAT TANGGAL LAHIR"] || '-';
+                        document.getElementById('resultNik').textContent = result.NIK || '-';
+                        
+                        // Set status
+                        const status = result.STATUS || 'TIDAK DITERIMA';
+                        statusBadge.textContent = status;
+                        
+                        // Set kelas berdasarkan status
+                        if (status.toUpperCase() === "DITERIMA") {
+                            statusBadge.className = "status-badge status-accepted";
+                            jadwalDaftarUlang.style.display = 'block';
+                            launchConfetti();
+                        } else {
+                            statusBadge.className = "status-badge status-rejected";
+                            jadwalDaftarUlang.style.display = 'none';
+                        }
+                        
+                        // Tampilkan hasil
+                        resultDisplay.style.display = 'block';
+                        
+                        // Scroll ke hasil
+                        resultDisplay.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        alert('Data tidak ditemukan. Pastikan:\n1. NIK yang dimasukkan benar (16 digit)\n2. Data sudah terdaftar di sistem');
+                        resultDisplay.style.display = 'none';
+                        jadwalDaftarUlang.style.display = 'none';
                     }
-                } else {
-                    alert('Data tidak ditemukan');
-                    hasilDiv.style.display = 'none';
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Terjadi kesalahan saat memeriksa data. Silakan coba lagi atau hubungi admin.');
+                } finally {
+                    // Kembalikan state tombol ke semula
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-search me-2"></i> Check Data';
                 }
             });
             
+            // Fungsi untuk download hasil sebagai PDF
+            document.getElementById('downloadBtn').addEventListener('click', function() {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                
+                // Data yang akan diunduh
+                const noPendaftaran = document.getElementById('resultNoPendaftaran').textContent;
+                const nama = document.getElementById('resultNama').textContent;
+                const ttl = document.getElementById('resultTtl').textContent;
+                const nik = document.getElementById('resultNik').textContent;
+                const status = document.getElementById('statusBadge').textContent;
+                
+                // Logo sekolah (ganti dengan path logo Anda)
+                const logoUrl = 'logosekolah.png';
+                
+                // Buat PDF
+                doc.addImage(logoUrl, 'PNG', 15, 10, 30, 30);
+                doc.setFontSize(16);
+                doc.setTextColor(40);
+                doc.text('SDN KEPATIHAN 01', 50, 20);
+                doc.setFontSize(12);
+                doc.text('PENGUMUMAN PENERIMAAN MURID BARU', 50, 28);
+                doc.text('TAHUN AJARAN 2025/2026', 50, 35);
+                
+                // Garis pemisah
+                doc.setDrawColor(200);
+                doc.line(15, 40, 195, 40);
+                
+                // Judul dokumen
+                doc.setFontSize(14);
+                doc.setTextColor(50);
+                doc.text('HASIL SELEKSI PENERIMAAN MURID BARU', 105, 50, null, null, 'center');
+                
+                // Data siswa
+                doc.setFontSize(12);
+                doc.text('Nomor Pendaftaran:', 20, 70);
+                doc.text(noPendaftaran, 60, 70);
+                
+                doc.text('Nama Siswa:', 20, 80);
+                doc.text(nama, 60, 80);
+                
+                doc.text('Tempat/Tgl Lahir:', 20, 90);
+                doc.text(ttl, 60, 90);
+                
+                doc.text('NIK:', 20, 100);
+                doc.text(nik, 60, 100);
+                
+                // Status
+                doc.setFontSize(14);
+                doc.text('STATUS:', 20, 120);
+                
+                if (status === "DITERIMA") {
+                    doc.setTextColor(0, 128, 0);
+                    doc.text('DITERIMA', 50, 120);
+                    doc.text('Selamat! Anda diterima di SDN Kepatihan 01', 105, 130, null, null, 'center');
+                    
+                } else {
+                    doc.setTextColor(255, 0, 0);
+                    doc.text('TIDAK DITERIMA', 50, 120);
+                    doc.text('Terima kasih telah mendaftar di SDN Kepatihan 01', 105, 130, null, null, 'center');
+                }
+                
+                // Footer
+                doc.setFontSize(10);
+                doc.setTextColor(100);
+                doc.text('Dokumen ini dicetak secara otomatis pada ' + new Date().toLocaleString(), 105, 220, null, null, 'center');
+                doc.text('@2025 SISTEM PENERIMAAN MURID BARU SDN KEPATIHAN 01', 105, 225, null, null, 'center');
+                
+                // Simpan PDF
+                doc.save('Pengumuman_Penerimaan_' + nama.replace(/\s/g, '_') + '.pdf');
+            });
             
-// Back to Top Button
-const backToTopBtn = document.getElementById("backToTopBtn");
-window.onscroll = function () {
-  backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
-};
-backToTopBtn.onclick = function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+            // Back to Top Button
+            const backToTopBtn = document.getElementById("backToTopBtn");
+            window.onscroll = function () {
+              backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+            };
+            backToTopBtn.onclick = function () {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            };
 
-// Dark Mode
-const toggle = document.getElementById("darkModeToggle");
-toggle.addEventListener("change", function () {
-  document.body.classList.toggle("dark-mode", toggle.checked);
-});
+            // Dark Mode
+            const toggle = document.getElementById("darkModeToggle");
+            if (toggle) {
+                toggle.addEventListener("change", function () {
+                  document.body.classList.toggle("dark-mode", toggle.checked);
+                });
+            }
 
-// Jalankan efek ketikan saat pertama kali load
+            // Jalankan efek ketikan saat pertama kali load
             setTimeout(typeWriter, 1000);
         });
     </script>
@@ -777,7 +1123,5 @@ toggle.addEventListener("change", function () {
 <input class="form-check-input" id="darkModeToggle" type="checkbox"/>
 <label class="form-check-label text-dark" for="darkModeToggle">Dark Mode</label>
 </div>
-<!-- Efek Salju -->
-
 </body>
 </html>
